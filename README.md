@@ -7,7 +7,9 @@
 官网如果上不去可以到这里下载:https://download.csdn.net/download/qq_36592993/18206572
 - cmd进入到文件目录\bin下
 - 执行切片命令
-```ffmpeg -i D:\xxx\test.mp4 -c:v libx264 -c:a aac -strict -2 -f hls -hls_list_size 0 D:\xxx\xxx\xxx.m3u8```
+```
+ffmpeg -i D:\xxx\test.mp4 -c:v libx264 -c:a aac -strict -2 -f hls -hls_list_size 0 D:\xxx\xxx\xxx.m3u8
+```
 
 ### `Vue-cli` 中播放 `m3u8` 文件
 - 安装`video.js`
