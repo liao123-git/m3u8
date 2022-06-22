@@ -20,10 +20,10 @@
 	```html
 	<video id="myVideoPlayer" class="video-js vjs-big-play-centered" muted></video>
 	```
-		- `id`：`video.js` 需要通过`id`来找到`video`标签
-		- `class`
-			- 'video-js'：使用`video.js`默认的样式
-			- 'vjs-big-play-centered'：让播放按钮居中
+	- `id`：`video.js` 需要通过`id`来找到`video`标签
+	- `class`
+		- 'video-js'：使用`video.js`默认的样式
+		- 'vjs-big-play-centered'：让播放按钮居中
 		- 具体可以看`video.js`官网
 	- 在`script`里导入插件
 	```js
@@ -62,7 +62,7 @@
 	}
 	```
 	- 修改`vue`的`mounted`
-	``js
+	```js
 	methods: {
 		// 需要下一帧才能获取到 dom
 		this.$nextTick(() => this.initVideo(this.nowPlayVideoUrl))
