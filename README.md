@@ -6,7 +6,8 @@
 官方下载网站: http://www.ffmpeg.org/download.html#build-windows
 官网如果上不去可以到这里下载:https://download.csdn.net/download/qq_36592993/18206572
 - cmd进入到文件目录\bin下
-- 执行切片命令`ffmpeg -i D:\xxx\test.mp4 -c:v libx264 -c:a aac -strict -2 -f hls -hls_list_size 0 D:\xxx\xxx\xxx.m3u8`
+- 执行切片命令
+```ffmpeg -i D:\xxx\test.mp4 -c:v libx264 -c:a aac -strict -2 -f hls -hls_list_size 0 D:\xxx\xxx\xxx.m3u8```
 
 ### `Vue-cli` 中播放 `m3u8` 文件
 - 安装`video.js`
@@ -19,12 +20,9 @@
 	- 在`template`里加入
 	```html
 	<video id="myVideoPlayer" class="video-js vjs-big-play-centered" muted></video>
+	<- id：video.js  需要通过 id 来找到 video 标签 ->
+	<- class：video-js  使用 video.js 默认的样式;  vjs-big-play-centered 让播放按钮居中 ->
 	```
-	- `id`：`video.js` 需要通过`id`来找到`video`标签
-	- `class`
-		- 'video-js'：使用`video.js`默认的样式
-		- 'vjs-big-play-centered'：让播放按钮居中
-		- 具体可以看`video.js`官网
 	- 在`script`里导入插件
 	```js
 	import "video.js/dist/video-js.css"
