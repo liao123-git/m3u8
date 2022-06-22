@@ -4,6 +4,7 @@
 ### 切片
 下载命令行切片工具
 官方下载网站: http://www.ffmpeg.org/download.html#build-windows
+
 官网如果上不去可以到这里下载:https://download.csdn.net/download/qq_36592993/18206572
 - cmd进入到文件目录\bin下
 - 执行切片命令
@@ -63,7 +64,7 @@ ffmpeg -i D:\xxx\test.mp4 -c:v libx264 -c:a aac -strict -2 -f hls -hls_list_size
 	```
 	- 修改`vue`的`mounted`
 	```js
-	methods: {
+	mounted: {
 		// 需要下一帧才能获取到 dom
 		this.$nextTick(() => this.initVideo(this.nowPlayVideoUrl))
 	}
